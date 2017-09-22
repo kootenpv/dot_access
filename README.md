@@ -58,18 +58,17 @@ but, it works by having an "original_object".
 You only have to do 1 comparison in total:
 
 ```python
-from dot_access import dot
+from dot_access import Dot
 
-@dot
-def get_data_from_api():
-    return {"a": {"b": {"c": 1}}}
+data = Dot({"a": 1})
 
-data = get_data_from_api()
+# Directly able to compare and assign
 interesting = data.a.b.original_object
 if interesting:
     interesting["d"] = 2
     interesting
     {'c': 1, 'd': 2}
+
 data
 Dot({'a': {'b': {'c': 1, 'd': 2}}})
 ```
