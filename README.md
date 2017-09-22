@@ -3,6 +3,10 @@
 qdot will help you quickly dive into data. Either you have a value, or you have a `None`.
 This is what you want when you are looking for something convenient like in JavaScript, yet at the same time allow for more Pythonic code.
 
+### Installation
+
+    # tested on py2.7, 3.4, 3.5, 3.6, 3.7
+    pip install dot_access
 
 ### Case 0: Hello Dot
 

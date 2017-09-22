@@ -1,5 +1,5 @@
 __project__ = "dot_access"
-__version__ = "0.0.0"
+__version__ = "0.0.1"
 __repo__ = "https://github.com/kootenpv/dot_access"
 
 from functools import wraps
